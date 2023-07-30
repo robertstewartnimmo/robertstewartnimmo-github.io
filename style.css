@@ -95,44 +95,41 @@ footer {
   justify-content: space-between;
   padding: 20px;
   background-color: var(--gray);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 .social-media a {
-    margin-right: 10px;
+    margin-right:10px
 }
   
-.social-media i {
+.social-media i{
     font-size:24px
 }
   
-.blue {
-    color: blue;
+.blue{
+    color:#0000FF
 }
   
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.grid-container{
+    display:flex
 }
   
 
 /* Add hover effects and transitions */
-a:hover, i:hover {
+a:hover, i:hover{
    /* Specify the property name for transition */
-   color:#000000;
-   transition: color .3s
+   color:#000000
+   transition-property:
+   transition-duration:.3s
 }
 
 
 /* Use media queries for responsiveness */
 @media screen and (max-width:768px) {
 
-   header nav ul{
+   /* Remove this line of code or change the display property to something other than none */
+   /* header nav ul{
       display:none
-   }
+   } */
 
    .container{
       flex-direction:column
@@ -143,13 +140,14 @@ a:hover, i:hover {
    }
 
    /* Add this code */
-   .social-media {
-     display: flex;
-     justify-content: center;
-     margin-top: 20px;
-   }
+   .social-media{
+     display:flex;
+     justify-content:center;
+     margin-top: auto;
+    }
 
-}
+
+
 
  
 
