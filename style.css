@@ -1,150 +1,83 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Product+Sans:400,700|Roboto:400,700');
-
-/* Define color variables */
-:root {
-  --blue: #2196f3;
-  --white: #ffffff;
-  --gray: #f0f0f0;
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+  background-color: black;
 }
 
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* hero background image */
+.bgimage {
+  height:100vh;
+  background: url('images/heroImage.jpeg');
+  background-size:cover;
+  position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+  font-size: 4.5rem;
+}
+.hero_desc {
+  font-size: 2rem;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-/* Set global styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333333;
+/* spacing on all sections */
+/* #about, #services, #portfolio, #contact {
+  margin-top: 4rem;
+  padding-top: 4rem;
+} */
+#contact {
+  padding-bottom: 4rem;
 }
-
-h1, h2 {
-  font-family: 'Product Sans', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Style header */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: var(--blue);
-}
-
-header h2 {
-  color: var(--white);
-}
-
-header nav ul {
-  display: flex;
-  list-style-type: none;
-}
-
-header nav ul li {
-  margin-left: 20px;
-}
-
-header nav ul li a {
-  color: var(--white);
-}
-
-/* Style main */
-main {
-  padding: 40px;
-}
-
-.section {
-  margin-bottom: 40px;
-}
-
-.section h1 {
-  font-size: 36px;
-}
-
-.container {
-  display: flex;
-}
-
-.article {
-  flex-basis: 50%;
-}
-
-.article img {
+/* about section image css */
+.imageAboutPage {
   width: 100%;
-  height: auto;
 }
 
-.article h2 {
-  font-size: 24px;
+/* services section css */
+.servicesText.card {
+  height: 280px;
+  cursor: pointer;
+}
+.servicesIcon {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
+.card-title {
+  text-align: center;
+}
+.card:hover .servicesIcon {
+  color: #008000;
+}
+.servicesText:hover {
+  border: 1px solid #008000;
 }
 
-/* Style footer */
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: var(--gray);
+/* social media icons styling */
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
 }
-
-.social-media a {
-    margin-right:10px
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+  color: #008000;
 }
-  
-.social-media i{
-    font-size:24px
+.fab {
+  color: #000000;
 }
-  
-.blue{
-    color:#0000FF
-}
-  
-.grid-container{
-    display:flex
-}
-  
-
-/* Add hover effects and transitions */
-a:hover, i:hover{
-   /* Specify the property name for transition */
-   color:#000000
-   transition-property:
-   transition-duration:.3s
+/* footer styling */
+#footer {
+  background-color: #808080;
+  text-align: center;
 }
 
 
-/* Use media queries for responsiveness */
-@media screen and (max-width:768px) {
 
-   /* Remove this line of code or change the display property to something other than none */
-   /* header nav ul{
-      display:none
-   } */
-
-   .container{
-      flex-direction:column
-   }
-
-   .article{
-      flex-basis:auto
-   }
-
-   /* Add this code */
-   .social-media{
-     display:flex;
-     justify-content:center;
-     margin-top: auto;
-    }
 
 
 
