@@ -1,8 +1,10 @@
 {
 	"folders": [
 		{
-			"name": "robertstewartnimmo.github.io",
 			"path": "."
+		},
+		{
+			"path": "../My Web Projects/portfolio2"
 		}
 	],
 	"settings": {}

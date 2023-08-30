@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.headline {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+.introduction {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 0 0 10px black;
+  max-width: 800px;
+  text-align: center;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 20px black;
+}
+
+.skills, .achievements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skills h3, .achievements h3 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+.skills ul, .achievements ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li, .achievements li {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+.call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; 
+ }
+  
+ .call-to-action p { 
+   font-size:.8rem; 
+   color:white; 
+   text-shadow:.5px; 
+   margin-right:.5px; 
+ }
+  
+ .call-to-action a { 
+   display:block; 
+   font-size:.8rem; 
+   color:white; 
+   background-color:#2c5364; 
+   padding:.5px; 
+   text-align:center; 
+   text-decoration:none; 
+ }
+  
+ .social { 
+   display:flex; 
+ }
+  
+ .social a { 
+   margin:.5px; 
+ }
+  
+ .social img { 
+   width:.5px; 
+   height:.5px; 
+   filter:none; 
+   opacity:.8; 
+   transition:.3s; 
+ }
+  
+ .social img:hover { 
+   opacity:.5; 
+   transform:s
+   cale(1.2); 
+ }
+  
