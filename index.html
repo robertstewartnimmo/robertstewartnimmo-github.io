@@ -1,124 +1,50 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <style>
-    /* CSS code for the cover page */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    }
-
-    .title {
-      font-size: 4rem;
-      color: white;
-      text-shadow: 0 0 10px black;
-    }
-
-    .subtitle {
-      font-size: 2rem;
-      color: white;
-      text-shadow: 0 0 10px black;
-    }
-
-    .image {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      border: 5px solid white;
-      box-shadow: 0 0 20px black;
-    }
-
-    .contact {
-      display: flex;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    .email {
-      font-size: 1.5rem;
-      color: white;
-      margin-right: 10px;
-    }
-
-    .social {
-      display: flex;
-    }
-
-    .social a {
-      margin: 0 5px;
-    }
-
-    .social img {
-      width: 40px;
-      height: 40px;
-      filter: invert(1);
-    }
-    
-    @media (max-width: 600px) {
-      /* CSS code for responsive design */
-      .title {
-        font-size: 3rem;
-      }
-
-      .subtitle {
-        font-size: 1.5rem;
-      }
-
-      .image {
-        width: 150px;
-        height: 150px;
-        border-width: 3px;
-        box-shadow: none;
-      }
-
-      .contact {
-        flex-direction: column;
-        margin-top: 10px;
-      }
-
-      .email {
-        font-size: 1rem;
-        margin-right: 0;
-        margin-bottom: 10px;
-        text-align: center;
-      }
-
-      .social img {
-        width: 30px;
-        height: 30px; 
-        filter:none; 
-        opacity:.8; 
-        transition:.3s; 
-     }
-      
-     .social img:hover { 
-       opacity:.5; 
-       transform:s
-       cale(1.2); 
-     }
-   }
- </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Robert Nimmo Portfolio Website</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
  <div class="container">
-   <h1 class="title">Robert Nimmo</h1>
-   <h2 class="subtitle">Web Designer</h2>
-   <img class="image" src="^4^" alt="A digital portrait of Robert Nimmo">
-   <div class="contact">
-     <p class="email">robertstewartnimmo@gmail.com</p>
-     <div class="social">
-       <a href="^9^"><img src="^10^" alt="Facebook icon"></a>
-       <a href="^11^"><img src="^12^" alt="Twitter icon"></a>
-       <a href="^13^"><img src="^14^" alt="LinkedIn icon"></a>
-     </div>
+   <h1 class="headline">Welcome to my portfolio</h1>
+   <p class="introduction">Hi, I'm Robert Nimmo, a freelance web designer based in Kilmarnock, Scotland. 
+    I started my web design journey by learning HTML, CSS and JavaScript. Getting comfortable with front-end 
+    frameworks was my next aim so I quickly moved onto learning to design with bootstrap and tailwind css before
+    I started building projects with React.js. Click on the link to see my favourite projects and find out 
+    why I built them.
+    </p>
+   <img class="image" src="assets/profile-pic.jpg" alt="A digital portrait of Robert Nimmo">
+   <div class="skills">
+     <h3>My Skills and Services</h3>
+     <ul>
+       <li>Designing responsive and user-friendly websites.</li>
+       <li>Creating beautiful and original graphics and illustrations for unique web pages</li>
+       <li>Developing dynamic and interactive features using JavaScript and Bootstrap</li>
+       <li>Optimizing websites for performance, accessibility, and SEO</li>
+       <li>Maintaining and updating websites with the latest trends and technologies</li>
+     </ul>
+   </div>
+   <div class="achievements">
+     <h3>My Achievements and Awards</h3>
+     <ul>
+       <li>Winning the Best Web Design Award at the Symington Digital Art Festival in 2022</li>
+       <li>Being featured on [Elementor's blog] as one of the standout examples of web design portfolios in 2021</li>
+       <li>Completing over 50 web design projects for clients from various industries and niches</li>
+       <li>Receiving positive feedback and testimonials from my satisfied clients</li>
+     </ul>
+   </div>
+   <div class="call-to-action">
+     <p>If you are interested in working with me or want to see more of my work, please feel free to contact me or check out my portfolio. I would love to hear from you and collaborate on your next web design project.</p>
+     <a href="">Contact Me</a>
+     <a href="">View My Portfolio</a>
+   </div>
+   <div class="social">
+     <a href=""><img src="" alt="Facebook icon"></a>
+     <a href=""><img src="" alt="Twitter icon"></a>
+     <a href=""><img src="" alt="LinkedIn icon"></a>
    </div>
  </div>
 </body>
