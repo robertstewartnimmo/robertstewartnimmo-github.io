@@ -4,48 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Robert Nimmo Portfolio Website</title>
+  <title>Robert Nimmo-Web Designer</title>
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
- <div class="container">
-   <h1 class="headline">Welcome to my portfolio</h1>
-   <p class="introduction">Hi, I'm Robert Nimmo, a freelance web designer based in Kilmarnock, Scotland. 
-    I started my web design journey by learning HTML, CSS and JavaScript. Getting comfortable with front-end 
-    frameworks was my next aim so I quickly moved onto learning to design with bootstrap and tailwind css before
-    I started building projects with React.js. Click on the link to see my favourite projects and find out 
-    why I built them.
-    </p>
+  <div class="container">
+  <header>
+    <nav>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+   <h1 class="headline">Robert Nimmo</h1>
    <img class="image" src="assets/profile-pic.jpg" alt="A digital portrait of Robert Nimmo">
-   <div class="skills">
-     <h3>My Skills and Services</h3>
-     <ul>
-       <li>Designing responsive and user-friendly websites.</li>
-       <li>Creating beautiful and original graphics and illustrations for unique web pages</li>
-       <li>Developing dynamic and interactive features using JavaScript and Bootstrap</li>
-       <li>Optimizing websites for performance, accessibility, and SEO</li>
-       <li>Maintaining and updating websites with the latest trends and technologies</li>
-     </ul>
-   </div>
-   <div class="achievements">
-     <h3>My Achievements and Awards</h3>
-     <ul>
-       <li>Winning the Best Web Design Award at the Symington Digital Art Festival in 2022</li>
-       <li>Being featured on [Elementor's blog] as one of the standout examples of web design portfolios in 2021</li>
-       <li>Completing over 50 web design projects for clients from various industries and niches</li>
-       <li>Receiving positive feedback and testimonials from my satisfied clients</li>
-     </ul>
-   </div>
-   <div class="call-to-action">
-     <p>If you are interested in working with me or want to see more of my work, please feel free to contact me or check out my portfolio. I would love to hear from you and collaborate on your next web design project.</p>
-     <a href="">Contact Me</a>
-     <a href="">View My Portfolio</a>
-   </div>
+   <h2 class="headline">Freelance Web Developer</h2>
+
    <div class="social">
-     <a href=""><img src="" alt="Facebook icon"></a>
-     <a href=""><img src="" alt="Twitter icon"></a>
-     <a href=""><img src="" alt="LinkedIn icon"></a>
-   </div>
- </div>
+    <a href=""><img src="" alt="Facebook icon"></a>
+    <a href=""><img src="" alt="Twitter icon"></a>
+    <a href=""><img src="" alt="LinkedIn icon"></a>
+  </div>
+  </div>
+ <script>
+ // Create a file system watcher
+const watcher = vscode.workspace.createFileSystemWatcher('**/*.html');
+
+// Register a listener for file changes
+watcher.onDidChange((uri) => {
+  // Run the better-seo command
+  vscode.commands.executeCommand('better-seo.analyze');
+});
+
+// Create an output channel
+const output = vscode.window.createOutputChannel('SEO Audit');
+
+// Register a listener for output events
+output.onDidAppendText((text) => {
+  // Parse the output text for issues or suggestions
+  const issues = parseOutput(text);
+
+  // Loop through the issues
+  for (const issue of issues) {
+    // Check if the issue can be fixed automatically or not
+    if (issue.fixable) {
+      // Fix the issue by modifying the file content
+      fixIssue(issue);
+    } else {
+      // Show a message with the issue and suggestion
+      vscode.window.showInformationMessage(`${issue.message}. Suggestion: ${issue.suggestion}`);
+    }
+  }
+});
+</script>
+
 </body>
 </html>
